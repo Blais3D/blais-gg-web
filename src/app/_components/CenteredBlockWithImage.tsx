@@ -5,17 +5,17 @@ import technologies from "./tech";
 
 const CenteredBlockWithImage: React.FC = () => {
   return (
-    <div className="relative flex h-[480px] w-[780px] rounded-3xl border-4 border-slate-300 bg-white p-8 shadow-lg">
-      <div className="h-max w-max p-6 text-black">
-        <h1 className="text-5xl font-thin">
+    <div className="relative flex h-1/2 w-2/5 flex-col rounded-3xl border-4 border-slate-300 bg-white p-8 shadow-lg">
+      <div className="h-2/3 w-5/6 p-6 text-black">
+        <h1 className="text-2xl font-bold">
           Hey, My name is Linwood! &#128075;
         </h1>
-        <h1 className="text-4xl font-bold">
+        <h1 className="text-lg">
           <Typewriter words={technologies} />
         </h1>
       </div>
-      <div className="absolute bottom-4 right-8 h-1/5 w-8/12 overflow-hidden border-4 border-slate-300"></div>
-      <div className="absolute -bottom-8 -left-8 h-1/2 w-[h] overflow-hidden rounded-full border-4 border-slate-300 shadow-md">
+      <div className="h-1/3 w-5/6"></div>
+      <div className="absolute -right-8 -top-12 h-1/2 overflow-hidden rounded-full border-4 border-slate-300 shadow-lg">
         <img
           src="https://media.licdn.com/dms/image/v2/D4E03AQHbO2LW46wq8w/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1711684509376?e=1730937600&v=beta&t=Go1Z2U_44Mnw14z3PQKLN4Q1CU6maL5WKmI8AZa99K8" // Replace with your image source
           alt="This is meant to be a picture of me :("

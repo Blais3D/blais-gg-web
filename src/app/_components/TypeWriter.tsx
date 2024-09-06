@@ -13,7 +13,7 @@ const Typewriter: React.FC<TypewriterProps> = ({
   words,
   typingSpeed = 100,
   deletingSpeed = 50,
-  pauseTime = 2000,
+  pauseTime = 1500,
 }) => {
   const [text, setText] = useState<string>("");
   const [wordIndex, setWordIndex] = useState<number>(0);
@@ -71,10 +71,12 @@ const Typewriter: React.FC<TypewriterProps> = ({
   return (
     <div className="w-full">
       <span className="mr-2 inline">
-        {"I'm a software engineer who works in"}
+        {
+          "I'm a Student at Northeastern University and a Software Engineer that works in"
+        }
       </span>
       <span
-        style={{ color: currentWord ? currentWord.color : "#FFFFFF" }}
+        style={{ color: currentWord ? currentWord.color : "#000000" }}
         className="mr-2 inline"
       >
         {text}
